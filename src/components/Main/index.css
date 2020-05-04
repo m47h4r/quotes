@@ -1,0 +1,71 @@
+@import '../../assets/css/var.css';
+
+.app {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.quote {
+	height: fit-content;
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	max-width: 700px;
+	padding: 20px 30px;
+	margin: 30px auto;
+	border: 1px solid var(--grey-medium); /* to delete */
+	transition: all 1s ease-out;
+}
+.quote:hover {
+	border-radius: 35px;
+}
+
+.quote__text {
+	font-size: 1.5rem;
+	line-height: 4rem;
+	margin: 0px 0px 30px 0px;
+	transition: all 1s ease-out;
+}
+.quote__text::before {
+	content: "\“";
+	font-family: UnifrakturMaguntia;
+	color: var(--grey-dark);
+	font-size: 4rem;
+}
+.quote__text::after {
+	content: "\”";
+	font-family: UnifrakturMaguntia;
+	color: var(--grey-dark);
+	font-size: 4rem;
+}
+
+.quote__author {
+	align-self: flex-end;
+}
+
+.quote__belongs-to {
+	align-self: flex-end;
+}
+
+.quote-generator {
+	font-family: UnifrakturMaguntia;
+	display: block;
+	width: fit-content;
+	color: var(--black);
+	background-color: transparent;
+	text-decoration: none;
+	border: 1px solid var(--grey-medium);
+	padding: 20px 30px;
+	cursor: pointer; 
+	outline: none;
+	font-size: 2rem;
+	transition: all 1s ease-out;
+}
+
+.quote-generator:hover {
+	border-radius: 35px;
+}

@@ -1,0 +1,13 @@
+@font-face {
+	font-family: PetitFormalScript;
+	src: url('../font/PetitFormalScript.ttf');
+}
+
+@font-face {
+	font-family: UnifrakturMaguntia;
+	src: url('../font/UnifrakturMaguntia.ttf');
+}
+
+* {
+	font-family: PetitFormalScript;
+}
