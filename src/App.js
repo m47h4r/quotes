@@ -3,7 +3,6 @@ import React from 'react';
 import Main from './components/Main';
 
 import './assets/css/global.css';
-import './App.css';
 
 function App() {
   return (

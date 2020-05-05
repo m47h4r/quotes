@@ -1,10 +1,10 @@
 :root {
-	--grey-light: #efefef;
-	--grey-medium: #cdcdcd;
-	--grey-dark: #989898;
-	--black: #000000;
-	--black-transparent: rgba(0, 0, 0, 0.8);
-	--white: #ffffff;
-	font-size: 14px;
+  --grey-light: #efefef;
+  --grey-medium: #aaaaaa;
+  --grey-dark: #787878;
+  --black: #000000;
+  --black-transparent: rgba(0, 0, 0, 0.8);
+  --white: #ffffff;
+  --white-transparent: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
 }
-
