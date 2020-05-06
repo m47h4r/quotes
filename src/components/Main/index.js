@@ -9,11 +9,14 @@ function generateRandomNumber() {
   return randomNumber;
 }
 
+let setQuoteIncrementally = null;
+
 function Main() {
   const [text, setText] = useState("");
   const [author, setAuthor] = useState("");
   const [belongsTo, setBelongsTo] = useState("");
   const [appImageClass, setAppImageClass] = useState("");
+	// TODO: move url to config file
   const imageUrlToLoad = "https://source.unsplash.com/user/m47h4r/1920x1080";
 
   useEffect(() => {
@@ -22,27 +25,41 @@ function Main() {
     img.onload = function () {
       setAppImageClass("app-image");
     };
-  }, [imageUrlToLoad]);
+  }, []);
   // to prevent re-reunning this effect on every letter add (recursion)
 
-  function setQuoteIncrementally(quoteArray) {
-    if (quoteArray.length <= 0) {
-      return;
-    }
-    const [currentWord, ...rest] = quoteArray;
-    setText((old) => [...old, currentWord]);
-    const timer = setTimeout(() => {
-      setQuoteIncrementally(rest);
-    }, 20);
-    return () => clearTimeout(timer);
+	useEffect(() => {
+		setQuoteIncrementally = initializeSetQuoteIncrementally();
+	}, []);
+
+  function initializeSetQuoteIncrementally() {
+		let recursionCounter = 0;
+    return function setLetter(quoteArray, recursionCounterCheckNumber) {
+      if (quoteArray.length <= 0) {
+				// reset counter so other calls can be made
+				recursionCounter = 0;
+				return;
+			}
+			if (recursionCounter !== recursionCounterCheckNumber) {
+				return;
+			}
+			if (recursionCounterCheckNumber === 0) {
+				setText("");
+			}
+      const [currentWord, ...rest] = quoteArray;
+			quoteArray = rest;
+      setText((old) => [...old, currentWord]);
+      const timer = setTimeout(() => {
+        setLetter(quoteArray, ++recursionCounter);
+      }, 20);
+      return () => clearTimeout(timer);
+    };
   }
 
   function setQuote() {
     const quote = quotes[generateRandomNumber()];
     const quoteTextArray = quote.text.split("");
-    setText("");
-    setQuoteIncrementally(quoteTextArray);
-    //setText(quote.text);
+    setQuoteIncrementally(quoteTextArray, 0);
     setAuthor(quote.author);
     setBelongsTo(quote.belongsTo);
   }
