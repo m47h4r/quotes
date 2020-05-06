@@ -16,7 +16,7 @@ function Main() {
   const [author, setAuthor] = useState("");
   const [belongsTo, setBelongsTo] = useState("");
   const [appImageClass, setAppImageClass] = useState("");
-	// TODO: move url to config file
+  // TODO: move url to config file
   const imageUrlToLoad = "https://source.unsplash.com/user/m47h4r/1920x1080";
 
   useEffect(() => {
@@ -28,26 +28,26 @@ function Main() {
   }, []);
   // to prevent re-reunning this effect on every letter add (recursion)
 
-	useEffect(() => {
-		setQuoteIncrementally = initializeSetQuoteIncrementally();
-	}, []);
+  useEffect(() => {
+    setQuoteIncrementally = initializeSetQuoteIncrementally();
+  }, []);
 
   function initializeSetQuoteIncrementally() {
-		let recursionCounter = 0;
+    let recursionCounter = 0;
     return function setLetter(quoteArray, recursionCounterCheckNumber) {
       if (quoteArray.length <= 0) {
-				// reset counter so other calls can be made
-				recursionCounter = 0;
-				return;
-			}
-			if (recursionCounter !== recursionCounterCheckNumber) {
-				return;
-			}
-			if (recursionCounterCheckNumber === 0) {
-				setText("");
-			}
+        // reset counter so other calls can be made
+        recursionCounter = 0;
+        return;
+      }
+      if (recursionCounter !== recursionCounterCheckNumber) {
+        return;
+      }
+      if (recursionCounterCheckNumber === 0) {
+        setText("");
+      }
       const [currentWord, ...rest] = quoteArray;
-			quoteArray = rest;
+      quoteArray = rest;
       setText((old) => [...old, currentWord]);
       const timer = setTimeout(() => {
         setLetter(quoteArray, ++recursionCounter);
