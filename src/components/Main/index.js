@@ -60,8 +60,8 @@ function Main() {
     const quote = quotes[generateRandomNumber()];
     const quoteTextArray = quote.text.split("");
     setQuoteIncrementally(quoteTextArray, 0);
-    setAuthor(quote.author);
-    setBelongsTo(quote.belongsTo);
+    setAuthor(quote.author); // TODO: quote doesn't change but this does on multiple clicks
+    setBelongsTo(quote.belongsTo); // same as above
   }
 
   return (
