@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+
 import quotes from "../../data/quote";
+import config from '../../config/';
 
 import "./index.css";
 
@@ -16,12 +18,10 @@ function Main() {
   const [author, setAuthor] = useState("");
   const [belongsTo, setBelongsTo] = useState("");
   const [appImageClass, setAppImageClass] = useState("");
-  // TODO: move url to config file
-  const imageUrlToLoad = "https://source.unsplash.com/user/m47h4r/1920x1080";
 
   useEffect(() => {
     const img = new Image();
-    img.src = imageUrlToLoad;
+    img.src = config.url;
     img.onload = function () {
       setAppImageClass("app-image");
     };
@@ -34,10 +34,17 @@ function Main() {
 
   function initializeSetQuoteIncrementally() {
     let recursionCounter = 0;
-    return function setLetter(quoteArray, recursionCounterCheckNumber) {
+    return function setLetter(
+      quoteArray,
+      recursionCounterCheckNumber,
+      author,
+      belongsTo
+    ) {
       if (quoteArray.length <= 0) {
         // reset counter so other calls can be made
         recursionCounter = 0;
+        setAuthor(author);
+        setBelongsTo(belongsTo);
         return;
       }
       if (recursionCounter !== recursionCounterCheckNumber) {
@@ -45,12 +52,14 @@ function Main() {
       }
       if (recursionCounterCheckNumber === 0) {
         setText("");
+        setAuthor("");
+        setBelongsTo("");
       }
       const [currentWord, ...rest] = quoteArray;
       quoteArray = rest;
       setText((old) => [...old, currentWord]);
       const timer = setTimeout(() => {
-        setLetter(quoteArray, ++recursionCounter);
+        setLetter(quoteArray, ++recursionCounter, author, belongsTo);
       }, 20);
       return () => clearTimeout(timer);
     };
@@ -59,9 +68,7 @@ function Main() {
   function setQuote() {
     const quote = quotes[generateRandomNumber()];
     const quoteTextArray = quote.text.split("");
-    setQuoteIncrementally(quoteTextArray, 0);
-    setAuthor(quote.author); // TODO: quote doesn't change but this does on multiple clicks
-    setBelongsTo(quote.belongsTo); // same as above
+    setQuoteIncrementally(quoteTextArray, 0, quote.author, quote.belongsTo);
   }
 
   return (
