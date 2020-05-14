@@ -65,16 +65,6 @@ const quotes = [
 		belongsTo: "A Fraction of the Whole"
 	},
 	{
-		text: "Listen to what people say when they have new babies: ‘It’s the best thing I ever did in my life,’ ‘It’s magical, blahblahblah.’ They’ve done it for their own enchantment, to satiate their own emotional needs. Have you ever noticed that? That you’re a projection of other people’s desires? How does that make you feel?”",
-		author: "Steve Toltz",
-		belongsTo: "A Fraction of the Whole"
-	},
-	{
-		text: "No, your parents don’t love you— they need you! And a hell of a lot more than you need them, I can tell you that!”",
-		author: "Steve Toltz",
-		belongsTo: "A Fraction of the Whole"
-	},
-	{
 		text: "But was I so primitive I let myself be bewitched by hair? I mean, really. Hair! It’s just hair! Everyone has it! She puts it up, she lets it down. So what? And why did all the other parts of her have me wheezing with delight? I mean, who hasn’t got a back, or a belly, or armpits? This whole finicky obsession serves to humiliate me even as I write it, sure, but I suppose it isn’t that abnormal. That’s what a first love is all about.",
 		author: "Steve toltz",
 		belongsTo: "A Fraction of the Whole"
