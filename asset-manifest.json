@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/quotes/static/css/main.1acdbf4b.chunk.css",
-    "main.js": "/quotes/static/js/main.7d81ad31.chunk.js",
-    "main.js.map": "/quotes/static/js/main.7d81ad31.chunk.js.map",
-    "runtime-main.js": "/quotes/static/js/runtime-main.f4250a61.js",
-    "runtime-main.js.map": "/quotes/static/js/runtime-main.f4250a61.js.map",
-    "static/js/2.bffbee0a.chunk.js": "/quotes/static/js/2.bffbee0a.chunk.js",
-    "static/js/2.bffbee0a.chunk.js.map": "/quotes/static/js/2.bffbee0a.chunk.js.map",
-    "index.html": "/quotes/index.html",
-    "precache-manifest.4ae65fd563cff0cd18089094799788b5.js": "/quotes/precache-manifest.4ae65fd563cff0cd18089094799788b5.js",
-    "service-worker.js": "/quotes/service-worker.js",
-    "static/css/main.1acdbf4b.chunk.css.map": "/quotes/static/css/main.1acdbf4b.chunk.css.map",
-    "static/js/2.bffbee0a.chunk.js.LICENSE.txt": "/quotes/static/js/2.bffbee0a.chunk.js.LICENSE.txt",
-    "static/media/global.css": "/quotes/static/media/UnifrakturMaguntia.93b9bfc6.ttf"
+    "main.css": "/sandbox_quotes/static/css/main.5cbf5ccd.chunk.css",
+    "main.js": "/sandbox_quotes/static/js/main.269ac699.chunk.js",
+    "main.js.map": "/sandbox_quotes/static/js/main.269ac699.chunk.js.map",
+    "runtime-main.js": "/sandbox_quotes/static/js/runtime-main.2477fef3.js",
+    "runtime-main.js.map": "/sandbox_quotes/static/js/runtime-main.2477fef3.js.map",
+    "static/js/2.bffbee0a.chunk.js": "/sandbox_quotes/static/js/2.bffbee0a.chunk.js",
+    "static/js/2.bffbee0a.chunk.js.map": "/sandbox_quotes/static/js/2.bffbee0a.chunk.js.map",
+    "index.html": "/sandbox_quotes/index.html",
+    "precache-manifest.a78c3c2f67b20a0781a8acb533754156.js": "/sandbox_quotes/precache-manifest.a78c3c2f67b20a0781a8acb533754156.js",
+    "service-worker.js": "/sandbox_quotes/service-worker.js",
+    "static/css/main.5cbf5ccd.chunk.css.map": "/sandbox_quotes/static/css/main.5cbf5ccd.chunk.css.map",
+    "static/js/2.bffbee0a.chunk.js.LICENSE.txt": "/sandbox_quotes/static/js/2.bffbee0a.chunk.js.LICENSE.txt",
+    "static/media/global.css": "/sandbox_quotes/static/media/UnifrakturMaguntia.93b9bfc6.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.f4250a61.js",
+    "static/js/runtime-main.2477fef3.js",
     "static/js/2.bffbee0a.chunk.js",
-    "static/css/main.1acdbf4b.chunk.css",
-    "static/js/main.7d81ad31.chunk.js"
+    "static/css/main.5cbf5ccd.chunk.css",
+    "static/js/main.269ac699.chunk.js"
   ]
 }
