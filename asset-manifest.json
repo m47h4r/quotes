@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/sandbox_quotes/static/css/main.5cbf5ccd.chunk.css",
-    "main.js": "/sandbox_quotes/static/js/main.269ac699.chunk.js",
-    "main.js.map": "/sandbox_quotes/static/js/main.269ac699.chunk.js.map",
+    "main.css": "/sandbox_quotes/static/css/main.5b8aef93.chunk.css",
+    "main.js": "/sandbox_quotes/static/js/main.e9acbc9a.chunk.js",
+    "main.js.map": "/sandbox_quotes/static/js/main.e9acbc9a.chunk.js.map",
     "runtime-main.js": "/sandbox_quotes/static/js/runtime-main.2477fef3.js",
     "runtime-main.js.map": "/sandbox_quotes/static/js/runtime-main.2477fef3.js.map",
     "static/js/2.bffbee0a.chunk.js": "/sandbox_quotes/static/js/2.bffbee0a.chunk.js",
     "static/js/2.bffbee0a.chunk.js.map": "/sandbox_quotes/static/js/2.bffbee0a.chunk.js.map",
     "index.html": "/sandbox_quotes/index.html",
-    "precache-manifest.a78c3c2f67b20a0781a8acb533754156.js": "/sandbox_quotes/precache-manifest.a78c3c2f67b20a0781a8acb533754156.js",
+    "precache-manifest.279b05203eaa2155d6cba694630856c0.js": "/sandbox_quotes/precache-manifest.279b05203eaa2155d6cba694630856c0.js",
     "service-worker.js": "/sandbox_quotes/service-worker.js",
-    "static/css/main.5cbf5ccd.chunk.css.map": "/sandbox_quotes/static/css/main.5cbf5ccd.chunk.css.map",
+    "static/css/main.5b8aef93.chunk.css.map": "/sandbox_quotes/static/css/main.5b8aef93.chunk.css.map",
     "static/js/2.bffbee0a.chunk.js.LICENSE.txt": "/sandbox_quotes/static/js/2.bffbee0a.chunk.js.LICENSE.txt",
     "static/media/global.css": "/sandbox_quotes/static/media/UnifrakturMaguntia.93b9bfc6.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.2477fef3.js",
     "static/js/2.bffbee0a.chunk.js",
-    "static/css/main.5cbf5ccd.chunk.css",
-    "static/js/main.269ac699.chunk.js"
+    "static/css/main.5b8aef93.chunk.css",
+    "static/js/main.e9acbc9a.chunk.js"
   ]
 }
